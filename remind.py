@@ -81,7 +81,7 @@ def check_reminders():
     #vps_purchase_dates[user_id] = purchase_date
 
 @app.on_message(filters.command("test"))
-async def test_command(client: Client, message: types.Message):
+async def test_command(client, message):
     print(f"/test command invoked by user {message.from_user.id} in group {message.chat.id}")
     await message.reply("Test command received.")
 
