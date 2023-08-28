@@ -4,13 +4,13 @@ import datetime
 import time
 
 # Replace with your own API credentials
-api_id = YOUR_API_ID
-api_hash = 'YOUR_API_HASH'
+api_id = 23298188
+api_hash = '49869a9d2c46007cc1c1e002e8f8ef2b'
 
 app = Client("my_account", api_id=api_id, api_hash=api_hash)
 
 # Replace with your own bot owner's chat ID
-bot_owner_chat_id = YOUR_BOT_OWNER_CHAT_ID
+bot_owner_chat_id = "-1001975251757'
 
 # Dictionary to store VPS purchase dates for each user
 vps_purchase_dates = {}
@@ -79,6 +79,11 @@ def channel_post_handler(client, message):
     user_id = message.from_user.id
     purchase_date = datetime.datetime.now()  # Replace with the actual purchase date
     vps_purchase_dates[user_id] = purchase_date
+
+@app.on_message(filters.command("test"))
+async def test_command(client: Client, message: types.Message):
+    print(f"/test command invoked by user {message.from_user.id} in group {message.chat.id}")
+    await message.reply("Test command received.")
 
 if __name__ == "__main__":
     app.start()
