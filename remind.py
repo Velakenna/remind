@@ -70,15 +70,15 @@ def check_reminders():
                 vps_purchase_dates[user_id] = next_reminder_date
         time.sleep(3600)  # Check every hour
 
-@app.on_channel_post(filters.channel & ~filters.edited)
-def channel_post_handler(client, message):
+#@app.on_channel_post(filters.channel & ~filters.edited)
+#def channel_post_handler(client, message):
     # Process purchase details posted in the channel
     # You can extract user IDs and purchase dates from the message and update vps_purchase_dates
     
     # For example:
-    user_id = message.from_user.id
-    purchase_date = datetime.datetime.now()  # Replace with the actual purchase date
-    vps_purchase_dates[user_id] = purchase_date
+    #user_id = message.from_user.id
+    #purchase_date = datetime.datetime.now()  # Replace with the actual purchase date
+    #vps_purchase_dates[user_id] = purchase_date
 
 @app.on_message(filters.command("test"))
 async def test_command(client: Client, message: types.Message):
