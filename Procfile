@@ -1,1 +1,1 @@
-worker: python3 botstatus_pratheek.py
+worker: python3 remind.py
