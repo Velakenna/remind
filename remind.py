@@ -10,7 +10,7 @@ api_hash = '49869a9d2c46007cc1c1e002e8f8ef2b'
 app = Client("my_account", api_id=api_id, api_hash=api_hash)
 
 # Replace with your own bot owner's chat ID
-bot_owner_chat_id = "-1001975251757'
+bot_owner_chat_id = -1001975251757
 
 # Dictionary to store VPS purchase dates for each user
 vps_purchase_dates = {}
