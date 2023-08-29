@@ -4,13 +4,13 @@ import datetime
 import time
 
 # Replace with your own API credentials
-api_id = YOUR_API_ID
-api_hash = 'YOUR_API_HASH'
+api_id = 23298188
+api_hash = '49869a9d2c46007cc1c1e002e8f8ef2b'
 
 app = Client("me_account", api_id=api_id, api_hash=api_hash)
 
 # Replace with your own bot owner's chat ID
-bot_owner_chat_id = YOUR_BOT_OWNER_CHAT_ID
+bot_owner_chat_id = -1001975251757
 
 # Dictionary to store VPS purchase details
 vps_purchase_details = {}  # Key: user_id, Value: {"username": "", "purchase_date": datetime.datetime}
