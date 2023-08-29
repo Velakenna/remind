@@ -27,7 +27,9 @@ def send_renewal_request_to_channel(user_id, username):
 @app.on_message(filters.group & ~filters.edited)
 def group_message_handler(client, message):
     try:
+        print("Received group message:", message.text)
         if "vps purchase" in message.text.lower():
+            print("Found 'vps purchase' keyword")
             user_id = message.from_user.id
             username = message.from_user.username
             purchase_date = datetime.datetime.now()  # Replace with the actual purchase date
