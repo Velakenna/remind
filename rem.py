@@ -6,8 +6,9 @@ import time
 # Replace with your own API credentials
 api_id = 23298188
 api_hash = '49869a9d2c46007cc1c1e002e8f8ef2b'
+bot_token = '5327660504:AAE4uw-AF-fWUPoywyVv_gM5EQujZnLTSl4'
 
-app = Client("me_account", api_id=api_id, api_hash=api_hash)
+app = Client("me_account", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 # Replace with your own bot owner's chat ID
 bot_owner_chat_id = -1001975251757
