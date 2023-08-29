@@ -4,8 +4,8 @@ import datetime
 import time
 
 # Replace with your own API credentials
-api_id = 23298188
-api_hash = '49869a9d2c46007cc1c1e002e8f8ef2b'
+api_id = 13382500
+api_hash = '6f5691b23c6f032eaae722e96d7e2459'
 bot_token = '5327660504:AAE4uw-AF-fWUPoywyVv_gM5EQujZnLTSl4'
 
 app = Client("me_account", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
