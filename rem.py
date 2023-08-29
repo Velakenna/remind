@@ -41,8 +41,7 @@ def group_message_handler(client, message):
 
 if __name__ == "__main__":
     try:
-        app.start()
-        check_reminders()
+        app.start()        
         app.run()
     except Exception as e:
         print("An error occurred during app execution:", e)
